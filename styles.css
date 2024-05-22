@@ -41,6 +41,13 @@ section {
     margin-bottom: 20px;
 }
 
+.profile-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px auto;
+}
+
 footer {
     text-align: center;
     background-color: #333;
