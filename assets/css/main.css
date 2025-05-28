@@ -3753,6 +3753,18 @@ input, select, textarea {
 
 		}
 
+@media screen and (max-width: 980px) {
+    #nav {
+        display: flex !important; /* Ensure the nav is visible */
+        flex-direction: column; /* Stack items vertically */
+        padding: 1rem; /* Optional: Add padding for spacing */
+    }
+
+    #nav ul.links li {
+        margin: 0.5rem 0; /* Add spacing between links */
+    }
+}
+
 /* Main */
 
 	#main {
