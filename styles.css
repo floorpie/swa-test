@@ -21,6 +21,7 @@ header h1 {
 /* Navigation Styles */
 nav {
     z-index: 10; /* Ensure the navigation appears above other elements */
+    background-color: rgba(255, 0, 0, 0.5); /* Add a semi-transparent red background for testing */
 }
 
 nav ul {
@@ -110,3 +111,4 @@ footer {
     background-color: #333;
     color: #fff;
 }
+
