@@ -3504,65 +3504,43 @@ input, select, textarea {
 				display: none;
 			}
 
+			#nav ul.links {
+				width: 100%;
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+
+			#nav ul.links li {
+				margin: 0.5rem 0;
+				text-align: center;
+			}
+
+			#nav ul.links li a {
+				display: block;
+				padding: 0.75rem;
+				color: #fff;
+				text-decoration: none;
+				font-size: 1rem;
+				transition: color 0.3s ease;
+			}
+
+			#nav ul.links li a:hover {
+				color: #18bfef;
+			}
+
+			#nav ul.links li.active a {
+				background-color: #333;
+			}
 		}
-
-@media screen and (max-width: 980px) {
-    #nav {
-        display: flex !important; /* Ensure the nav is visible */
-        flex-direction: column; /* Stack items vertically */
-        align-items: stretch; /* Stretch items to fill the container */
-        background-color: #444; /* Ensure consistent background color */
-        padding: 1rem; /* Add padding for spacing */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
-    }
-
-    #nav ul.links {
-        width: 100%; /* Ensure the links take up full width */
-        padding: 0;
-        margin: 0;
-        list-style: none;
-    }
-
-    #nav ul.links li {
-        margin: 0.5rem 0; /* Add spacing between links */
-        text-align: center; /* Center-align the links */
-    }
-
-    #nav ul.links li a {
-        display: block; /* Ensure links take up full width */
-        padding: 0.75rem; /* Add padding for better tap targets */
-        color: #fff; /* Ensure text is visible */
-        text-decoration: none; /* Remove underline */
-        background-color: #555; /* Add background for better visibility */
-        border-radius: 4px; /* Optional: Add rounded corners */
-        transition: background-color 0.3s ease; /* Smooth hover effect */
-    }
-
-    #nav ul.links li a:hover {
-        background-color: #666; /* Add hover effect */
-    }
-
-    #nav ul.links li.active a {
-        background-color: #333; /* Highlight active link */
-    }
-}
 
 /* Navigation Styles */
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #333;
     padding: 10px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-nav .logo {
-    color: #fff;
-    font-size: 1.5rem;
-    text-decoration: none;
 }
 
 nav ul {
@@ -3585,41 +3563,6 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #18bfef;
-}
-
-/* Mobile Navigation Toggle */
-nav .menu-toggle {
-    display: none;
-    font-size: 1.5rem;
-    color: #fff;
-    cursor: pointer;
-}
-
-/* Responsive Styles */
-@media (max-width: 980px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background-color: #333;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 10px 0;
-    }
-
-    nav ul.active {
-        display: flex;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-        text-align: center;
-    }
-
-    nav .menu-toggle {
-        display: block;
-    }
 }
 
 /* Main */
