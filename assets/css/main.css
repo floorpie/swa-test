@@ -3748,23 +3748,41 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#nav {
-				display: block !important;
-				position: relative;
-				background-color: rgba(255, 255, 255, 0.9);
-				padding: 1rem;
-			}
-
-			#nav ul.links {
-				display: flex;
-				flex-direction: column;
-				gap: 0.5rem;
-			}
-
-			#nav ul.links li {
-				margin: 0;
+				display: none;
 			}
 
 		}
+
+@media screen and (max-width: 980px) {
+    #nav {
+        display: flex !important; /* Ensure the nav is visible */
+        flex-direction: column; /* Stack items vertically */
+        background-color: #444; /* Ensure consistent background color */
+        padding: 1rem; /* Add padding for spacing */
+    }
+
+    #nav ul.links {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    #nav ul.links li {
+        margin: 0.5rem 0; /* Add spacing between links */
+        text-align: center; /* Center-align the links */
+    }
+
+    #nav ul.links li a {
+        display: block; /* Ensure links take up full width */
+        padding: 0.5rem; /* Add padding for better tap targets */
+        color: #fff; /* Ensure text is visible */
+        text-decoration: none; /* Remove underline */
+    }
+
+    #nav ul.links li a:hover {
+        background-color: #555; /* Add hover effect */
+    }
+}
 
 /* Main */
 
