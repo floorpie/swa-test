@@ -253,6 +253,13 @@
 
 			});
 
+			// Ensure #nav is visible on mobile
+			$(document).ready(function() {
+				if ($(window).width() <= 980) {
+					$('#nav').show(); // Ensure nav is visible
+				}
+			});
+
 		}
 
 })(jQuery);
