@@ -260,6 +260,12 @@
 				}
 			});
 
+			// Function to toggle the mobile menu
+			function toggleMenu() {
+				const navMenu = document.querySelector('nav ul');
+				navMenu.classList.toggle('active');
+			}
+
 		}
 
 })(jQuery);
