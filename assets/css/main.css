@@ -2446,7 +2446,6 @@ input, select, textarea {
 
 		ul.actions li {
 			padding: 0 0 0 1rem;
-			vertical-align: middle;
 		}
 
 		ul.actions.special {
@@ -2564,7 +2563,6 @@ input, select, textarea {
 		ul.icons li {
 			display: inline-block;
 			padding: 0 0.5rem 0 0;
-			vertical-align: middle;
 		}
 
 			ul.icons li:last-child {
@@ -4462,7 +4460,6 @@ nav .menu-toggle {
 					display: block;
 					font-family: "Source Sans Pro", Helvetica, sans-serif;
 					font-size: 0.9rem;
-					font-size: 0.9rem;
 					font-weight: 900;
 					letter-spacing: 0.075em;
 					padding: 0.75rem 0;
@@ -4491,7 +4488,6 @@ nav .menu-toggle {
 			right: 0;
 			text-align: right;
 			top: 0;
-			vertical-align: middle;
 			width: 7rem;
 		}
 
