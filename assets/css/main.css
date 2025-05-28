@@ -3512,9 +3512,10 @@ input, select, textarea {
     #nav {
         display: flex !important; /* Ensure the nav is visible */
         flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center-align items */
+        align-items: stretch; /* Stretch items to fill the container */
         background-color: #444; /* Ensure consistent background color */
         padding: 1rem; /* Add padding for spacing */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
     }
 
     #nav ul.links {
@@ -3536,10 +3537,15 @@ input, select, textarea {
         text-decoration: none; /* Remove underline */
         background-color: #555; /* Add background for better visibility */
         border-radius: 4px; /* Optional: Add rounded corners */
+        transition: background-color 0.3s ease; /* Smooth hover effect */
     }
 
     #nav ul.links li a:hover {
         background-color: #666; /* Add hover effect */
+    }
+
+    #nav ul.links li.active a {
+        background-color: #333; /* Highlight active link */
     }
 }
 
